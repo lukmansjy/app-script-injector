@@ -19,7 +19,7 @@ exports.read = async () => {
     const res = await googleSheetsInstance.spreadsheets.values.get({
         auth,
         spreadsheetId,
-        range: "list!A:B",
+        range: "list!A:C",
     });
 
     const rows = res.data.values;
